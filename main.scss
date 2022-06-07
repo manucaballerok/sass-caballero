@@ -1,0 +1,26 @@
+@import"header";
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(29, 29, 28);
+    color: black;
+    font-family: 'Koulen', cursive;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container .conten{
+        grid-column: 1/-1;
+ 
+    }
+    .container.sidebar{
+        grid-column: 1/-1;
+ 
+    }
+ } 

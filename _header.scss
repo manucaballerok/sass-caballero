@@ -1,0 +1,81 @@
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    .div{
+        background-color: white;
+        padding: 20%;
+        border-radius: 4%;
+    }
+    .header{
+        background-color: white;
+        padding: 20%;
+        border-radius: 4%;
+        background-color: #12203e;
+        color: #fff;
+        grid-column: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .conten{
+        grid-column: span 2;
+    }
+    .sidebar{
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+        grid-column: 3 / 4;
+        background: orangered;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+         -ms-flex-align: center;
+          align-items: center;
+       -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 2;
+            grid-row: 2 / 4;
+    }
+    .widget-1{
+           background-color: blue;
+           color: antiquewhite;
+           height: 100px;
+           text-align: center;
+           display: -webkit-box;
+           display: -ms-flexbox;
+           display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+    }
+    .widget-2{
+        background-color: blue;
+        color: antiquewhite;
+        height: 100px;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    footer{
+        background: #12203e;
+        color: white;
+        grid-column: span 3;    
+    }
+     }
